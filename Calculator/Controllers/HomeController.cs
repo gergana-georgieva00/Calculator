@@ -28,8 +28,16 @@ namespace Calculator.Controllers
             return View();
         }
         
+        [HttpGet]
         public IActionResult Numbers()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Numbers(int number)
+        {
+            ViewBag.NumbersRange = number;
             return View();
         }
 
